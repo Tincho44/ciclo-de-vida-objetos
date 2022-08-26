@@ -21,7 +21,10 @@ namespace ConsoleApplication
         {
             var train = new Train();
             train.StartEngines();
-            
+
+            //Parte 8: Cuando se ejecutan tantas instancias, 10.000.000, el metodo destructor toma protagonismo por la cantidad
+            // de instancias creadas.
+
             Train t1 = new Train ("Last Train To London");
             Train t2 = new Train ("Last Train To London");
             Train t3 = new Train ("Runaway Train");
